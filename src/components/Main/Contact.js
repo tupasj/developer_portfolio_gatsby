@@ -3,8 +3,13 @@ import styled from "styled-components";
 import { ContactForm } from "../UI";
 
 const Container = styled.section`
-margin-left: 15%;
-margin-right: 15%;
+@media (max-width: 468px) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+margin-left: 30%;
+margin-right: 30%;
 margin-bottom: 5%;
 text-align: center;
 `;
