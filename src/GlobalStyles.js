@@ -1,7 +1,7 @@
 import React from "react";
 import { createGlobalStyle } from "styled-components";
 
-const GlobalStyle = createGlobalStyle`
+const CSSReset = createGlobalStyle`
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -52,10 +52,17 @@ table {
 }
 `;
 
+const GlobalCustomStyles = createGlobalStyle`
+a {
+	text-decoration: none;
+}
+`;
+
 const GlobalStyles = ({ children }) => {
   return (
     <React.Fragment>
-      <GlobalStyle />
+      <CSSReset />
+	  <GlobalCustomStyles />
       {children}
     </React.Fragment>
   );

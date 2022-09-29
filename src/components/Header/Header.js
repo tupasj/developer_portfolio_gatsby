@@ -2,18 +2,18 @@ import * as React from "react";
 import styled from "styled-components";
 
 const Container = styled.header`
-display: flex;
-justify-content: space-between;
-padding: 12px;
-color: white;
-background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 18px;
+  color: white;
+  background-color: black;
 `;
 
 const Left = styled.span``;
 
 const Right = styled.span`
-display: flex;
-gap: 25px;
+  display: flex;
+  gap: 25px;
 `;
 
 const Header = () => {
