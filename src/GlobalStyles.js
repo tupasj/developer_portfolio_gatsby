@@ -65,7 +65,7 @@ const GlobalStyles = ({ children }) => {
   return (
     <React.Fragment>
       <CSSReset />
-	  <GlobalCustomStyles />
+      <GlobalCustomStyles />
       {children}
     </React.Fragment>
   );

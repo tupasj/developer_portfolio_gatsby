@@ -1,5 +1,6 @@
 import * as React from "react";
 import styled from "styled-components";
+import { AnchorTarget } from "../UI";
 
 const Container = styled.section`
   position: relative;
@@ -11,6 +12,13 @@ const Container = styled.section`
   text-align: center;
   background-color: lightgray;
 `;
+
+// const AnchorTarget = styled.div`
+//   visibility: hidden;
+//   display: block;
+//   position: relative;
+//   top: -115px;
+// `;
 
 const ContentWrapper = styled.div`
   transform: skewY(9deg);
@@ -30,6 +38,8 @@ const Paragraph = styled.p`
 const About = () => {
   return (
     <Container>
+      {/* <AnchorTarget id="about" /> */}
+      <AnchorTarget id="about" offset={-115} />
       <ContentWrapper>
         <Heading>About Me</Heading>
         <Paragraph>

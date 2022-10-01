@@ -1,10 +1,18 @@
 import * as React from "react";
 import styled from "styled-components";
+import { AnchorTarget } from "../UI/AnchorTarget";
 
 const Container = styled.section`
-  margin-left: 9%;
-  margin-right: 9%;
-  margin-bottom: 5%;
+  padding-left: 9%;
+  padding-right: 9%;
+  padding-top: 5%;
+  &:target {
+    display: block;
+    position: relative;
+    top: -50px; /* this is your offset */
+    visibility: hidden;
+    padding-top: 5%;
+  }
 `;
 
 const Heading = styled.h2`
@@ -34,6 +42,7 @@ const Icon = styled.span`
 const Skills = () => {
   return (
     <Container>
+      <AnchorTarget id="skills" offset={-200} />
       <Heading>Skills</Heading>
       <Wrapper>
         <Skill>

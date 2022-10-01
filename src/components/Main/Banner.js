@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
 import { StaticImage } from "gatsby-plugin-image";
-import { Particles } from "../UI";
+import { AnchorTarget, Particles } from "../UI";
 
 const Container = styled.section`
   position: relative;
@@ -32,6 +32,7 @@ const IntroTextBottom = styled.div`
 const Banner = () => {
   return (
     <Container>
+      <AnchorTarget id="banner" offset={-121} />
       <IntroText>
         <IntroTextTop>Hi, I'm name</IntroTextTop>
         <IntroTextBottom>web developer</IntroTextBottom>

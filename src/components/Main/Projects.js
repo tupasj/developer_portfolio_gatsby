@@ -81,7 +81,7 @@ const Buttons = styled.div`
 
 const Projects = () => {
   return (
-    <Container>
+    <Container id="projects">
       <ContentWrapper>
         <Heading>Projects</Heading>
         <Wrapper>

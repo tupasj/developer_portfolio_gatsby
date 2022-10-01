@@ -78,8 +78,6 @@ const Particles = ({count}) => {
     const randomYEnd = 100 - randomYStart;
     const randomXJitter = getRandomDecimal();
     const randomYJitter = getRandomDecimal();
-    console.log(`randomXstart: ${randomXStart}`);
-    console.log(`randomYstart: ${randomYStart}`);
     
     randomParticleParameters.push({
       size: randomSize,
