@@ -1,8 +1,10 @@
 import * as React from "react";
 import styled from "styled-components";
 import { StaticImage } from "gatsby-plugin-image";
+import { Particles } from "../UI";
 
 const Container = styled.section`
+  position: relative;
   display: grid;
   align-items: center;
   padding: 5% 4% 7% 4%;
@@ -40,6 +42,7 @@ const Banner = () => {
           alt="placeholder image"
         />
       </ImageContainer>
+      <Particles count={29} />
     </Container>
   );
 };

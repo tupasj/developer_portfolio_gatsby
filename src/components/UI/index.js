@@ -1,3 +1,5 @@
+import { ButtonRedirect } from "./ButtonRedirect";
 import { ContactForm } from "./ContactForm";
+import { Particles } from "./Particles";
 
-export { ContactForm };
+export { ButtonRedirect, ContactForm, Particles };

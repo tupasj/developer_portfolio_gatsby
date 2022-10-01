@@ -68,6 +68,12 @@ const Skills = () => {
         </Skill>
         <Skill>
           <Icon>
+            <i className="devicon-jest-plain colored"></i>
+          </Icon>
+          <span>Jest</span>
+        </Skill>
+        <Skill>
+          <Icon>
             <i className="devicon-git-plain colored"></i>
           </Icon>
           <span>Git</span>

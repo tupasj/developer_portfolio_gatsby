@@ -53,6 +53,9 @@ table {
 `;
 
 const GlobalCustomStyles = createGlobalStyle`
+html, body {
+	min-height: 100%;
+}
 a {
 	text-decoration: none;
 }

@@ -6,7 +6,12 @@ import { Skills } from "./Skills";
 import { Projects } from "./Projects";
 import { Contact } from "./Contact";
 
-const Container = styled.main``;
+const Container = styled.main`
+position: relative;
+display: flex;
+flex-direction: column;
+gap: 120px;
+`;
 
 const Main = () => {
   return (
