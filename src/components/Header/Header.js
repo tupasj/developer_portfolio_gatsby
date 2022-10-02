@@ -8,9 +8,31 @@ const Container = styled.header`
   z-index: 1;
   display: flex;
   justify-content: space-between;
-  padding: 18px;
+  padding: 12px;
   color: white;
   background-color: black;
+
+  span {
+    font-weight: bold;
+    transition: transform 200ms;
+  }
+  span:hover {
+    transform: scale(1.22);
+  }
+
+  nav > a::after {
+    content: "";
+    display: block;
+    height: 3px;
+    margin-top: 3px;
+    width: 0%;
+    transition: all ease-in-out 200ms;
+  }
+  nav > a:hover::after {
+    width: 100%;
+    background-color: white;
+    border-radius: 4px;
+  }
 `;
 
 const Left = styled.span``;

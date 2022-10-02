@@ -9,6 +9,11 @@ const Container = styled.a`
   padding: 6px;
   border-radius: 9px;
   cursor: pointer;
+  transition: transform 200ms;
+
+  &:hover {
+    transform: scale(1.05) translate(4px, -2px);
+  }
 `;
 
 const IconWrapper = styled.span`
