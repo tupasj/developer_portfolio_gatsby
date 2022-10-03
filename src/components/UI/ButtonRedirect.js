@@ -10,7 +10,8 @@ const Container = styled.a`
   border-radius: 9px;
   cursor: pointer;
   transition: transform 200ms;
-
+  background-color: var(--regular-turquoise);
+  
   &:hover {
     transform: scale(1.05) translate(4px, -2px);
   }

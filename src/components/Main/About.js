@@ -10,15 +10,8 @@ const Container = styled.section`
   padding-bottom: 7%;
   transform: skewY(-9deg);
   text-align: center;
-  background-color: lightgray;
+  background-color: var(--regular-gray);
 `;
-
-// const AnchorTarget = styled.div`
-//   visibility: hidden;
-//   display: block;
-//   position: relative;
-//   top: -115px;
-// `;
 
 const ContentWrapper = styled.div`
   transform: skewY(9deg);
@@ -26,19 +19,18 @@ const ContentWrapper = styled.div`
 
 const Heading = styled.h2`
   margin-bottom: 30px;
-  font-weight: bold;
-  font-size: 1.75rem;
+  color: var(--dark-blue);
 `;
 
 const Paragraph = styled.p`
   font-size: 1rem;
   line-height: 1.5;
+  color: var(--dark-blue);
 `;
 
 const About = () => {
   return (
     <Container>
-      {/* <AnchorTarget id="about" /> */}
       <AnchorTarget id="about" offset={-115} />
       <ContentWrapper>
         <Heading>About Me</Heading>

@@ -10,7 +10,7 @@ const Container = styled.section`
   padding-bottom: 7%;
   transform: skewY(9deg);
   text-align: center;
-  background-color: lightgray;
+  background-color: var(--regular-gray);
 `;
 
 const ContentWrapper = styled.div`
@@ -26,8 +26,7 @@ const Wrapper = styled.div`
 
 const Heading = styled.h2`
   margin-bottom: 30px;
-  font-weight: bold;
-  font-size: 1.75rem;
+  color: var(--dark-blue);
 `;
 
 // Project
@@ -38,11 +37,14 @@ const Project = styled.div`
   padding: 18px;
   box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.25);
   max-width: 335px;
+  color: var(--dark-blue);
+  background-color: var(--light-gray);
 `;
 
-const Title = styled.h2`
+const Title = styled.h3`
   padding-bottom: 12px;
   font-weight: bold;
+  color: var(--dark-blue);
 `;
 
 const ImageContainer = styled.div`
@@ -55,21 +57,22 @@ const TechnologiesUsed = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 7px;
+  gap: 6px;
   flex-wrap: wrap;
   margin-bottom: 12px;
 `;
 
 const TechnologyUsed = styled.span`
-  border-radius: 12px;
-  padding: 5.5px;
-  background-color: black;
+  border-radius: 14px;
+  padding: 6.5px;
+  background-color: var(--dark-blue);
   color: white;
 `;
 
 const Description = styled.div`
   margin-bottom: 7px;
   line-height: 1.25;
+  color: var(--dark-blue);
 `;
 
 const Buttons = styled.div`
@@ -128,10 +131,10 @@ const Projects = () => {
               <TechnologyUsed>Responsive design</TechnologyUsed>
             </TechnologiesUsed>
             <Description>
-              A product landing page clone of the Apple MacBook. It has been
-              designed to be fully responsive for the three standard screen
-              sizes (desktop, tablet, and mobile) by utilizing media queries.
-              For styling, I used the CSS preprocessor SASS, paired with the BEM
+              A product landing page clone of the Apple MacBook Pro. It has been
+              designed to be fully responsive for three standard screen sizes
+              (desktop, tablet, and mobile) by utilizing media queries. For
+              styling, I used the CSS preprocessor SASS, paired with the BEM
               naming convention to enhance code readability.
             </Description>
             <Buttons>

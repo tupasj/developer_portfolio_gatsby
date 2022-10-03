@@ -18,8 +18,6 @@ const Container = styled.section`
 const Heading = styled.h2`
   margin-bottom: 45px;
   text-align: center;
-  font-size: 1.75rem;
-  font-weight: bold;
 `;
 
 const Wrapper = styled.div`

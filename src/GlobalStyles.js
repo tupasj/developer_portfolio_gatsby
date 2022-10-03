@@ -53,8 +53,26 @@ table {
 `;
 
 const GlobalCustomStyles = createGlobalStyle`
+:root {
+	--dark-blue: #141439;
+	--regular-black: #000000;
+	--regular-gray: #d3d3d3;
+	--regular-turquoise: #259584;
+	--light-blue: #40778c;
+	--light-gray: #fafafa;
+}
 html, body {
 	min-height: 100%;
+	font-family: Geneva, Verdana, sans-serif;
+	background-color: var(--light-gray);
+}
+h2 {
+	font-size: 2.1rem;
+	font-weight: bold;
+}
+h3 {
+	font-size: 1.25rem;
+	font-weight: bold;
 }
 a {
 	text-decoration: none;

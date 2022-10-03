@@ -6,12 +6,12 @@ const Container = styled.footer`
   padding-bottom: 21px;
   line-height: 1.75;
   text-align: center;
-  color: white;
-  background-color: black;
+  color: var(--light-gray);
+  background-color: var(--dark-blue);
 `;
 
 const Attribution = styled.a`
-  color: white;
+  color: var(--light-gray);
   text-decoration: underline;
 `;
 

@@ -21,12 +21,14 @@ const IntroText = styled.div`
 
 const IntroTextTop = styled.div`
   margin-bottom: 22px;
-  font-size: 42px;
+  font-size: 46px;
   font-weight: bold;
+  color: var(--dark-blue);
 `;
 
 const IntroTextBottom = styled.div`
-  font-size: 26px;
+  font-size: 28px;
+  color: var(--regular-turquoise);
 `;
 
 const Banner = () => {

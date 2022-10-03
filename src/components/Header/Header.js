@@ -9,8 +9,8 @@ const Container = styled.header`
   display: flex;
   justify-content: space-between;
   padding: 12px;
-  color: white;
-  background-color: black;
+  color: var(--light-gray);
+  background-color: var(--dark-blue);
 
   span {
     font-weight: bold;
