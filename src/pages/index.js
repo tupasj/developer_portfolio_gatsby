@@ -1,4 +1,5 @@
 import * as React from "react";
+import { ThemeProvider } from "styled-components";
 import { Header } from "../components/Header";
 import { Main } from "../components/Main";
 import { GlobalStyles } from "../GlobalStyles";
@@ -15,12 +16,31 @@ export const Head = () => (
   </>
 );
 
+const lightTheme = {
+  switchPosition: 28,
+  mainBackgroundColor: "var(--light-gray)",
+}
+
+const darkTheme = {
+  switchPosition: 0,
+  mainBackgroundColor: "var(--dark-blue)",
+}
+
 const Index = () => {
+  const [theme, setTheme] = React.useState("light");
+  const isDarkTheme = (theme === "dark");
+
+  const toggleTheme = () => {
+    setTheme(isDarkTheme ? "light" : "dark");
+  }
+
   return (
     <GlobalStyles>
-      <Header />
-      <Main />
-      <Footer />
+      <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
+        <Header toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />
+        <Main />
+        <Footer />
+      </ThemeProvider>
     </GlobalStyles>
   );
 };

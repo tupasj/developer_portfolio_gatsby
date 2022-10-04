@@ -55,6 +55,7 @@ table {
 const GlobalCustomStyles = createGlobalStyle`
 :root {
 	--dark-blue: #141439;
+	--dark-gray: #464646;
 	--regular-black: #000000;
 	--regular-gray: #d3d3d3;
 	--regular-turquoise: #259584;

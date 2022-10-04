@@ -1,6 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
+import { ThemeSwitch } from "../UI/ThemeSwitch";
 
 const Container = styled.header`
   position: sticky;
@@ -8,9 +9,11 @@ const Container = styled.header`
   z-index: 1;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 12px;
   color: var(--light-gray);
   background-color: var(--dark-blue);
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
 
   span {
     font-weight: bold;
@@ -38,17 +41,24 @@ const Container = styled.header`
 const Left = styled.span``;
 
 const Right = styled.nav`
+  @media (max-width: 472px) {
+    gap: 12px;
+  }
   display: flex;
   gap: 25px;
+  a {
+    margin-top: 5px;
+  }
 `;
 
-const Header = () => {
+const Header = ({ toggleTheme, isDarkTheme }) => {
   return (
     <Container>
       <Left>
         <AnchorLink to="/#banner">JT</AnchorLink>
       </Left>
       <Right>
+        <ThemeSwitch toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />
         <AnchorLink to="/#about">About</AnchorLink>
         <AnchorLink to="/#skills">Skills</AnchorLink>
         <AnchorLink to="/#projects">Projects</AnchorLink>
