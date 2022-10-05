@@ -10,7 +10,7 @@ const Container = styled.section`
   padding-bottom: 7%;
   transform: skewY(-9deg);
   text-align: center;
-  background-color: var(--regular-gray);
+  background-color: ${(props) => props.theme.aboutBackgroundColor};
 `;
 
 const ContentWrapper = styled.div`

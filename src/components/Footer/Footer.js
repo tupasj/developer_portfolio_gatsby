@@ -8,6 +8,7 @@ const Container = styled.footer`
   text-align: center;
   color: var(--light-gray);
   background-color: var(--dark-blue);
+  border-top: ${(props) => props.theme.footerBorderTop};
 `;
 
 const Attribution = styled.a`
@@ -15,9 +16,28 @@ const Attribution = styled.a`
   text-decoration: underline;
 `;
 
+const SocialIcons = styled.div``;
+
+const SocialIcon = styled.span`
+  margin: 7px;
+  font-size: 32px;
+`;
+
 const Footer = () => {
   return (
     <Container>
+      <SocialIcons>
+        <SocialIcon>
+          <a href="https://github.com/tupasj" target="__blank">
+            <i className="devicon-github-original"></i>
+          </a>
+        </SocialIcon>
+        <SocialIcon>
+          <a href="https://www.linkedin.com/in/jeremy-tupas" target="__blank">
+            <i className="devicon-linkedin-plain"></i>
+          </a>
+        </SocialIcon>
+      </SocialIcons>
       <div>&copy; 2022 - Jeremy Tupas</div>
       <Attribution
         href="https://www.vecteezy.com/free-vector/web"

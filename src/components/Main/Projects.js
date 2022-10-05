@@ -10,7 +10,7 @@ const Container = styled.section`
   padding-bottom: 7%;
   transform: skewY(9deg);
   text-align: center;
-  background-color: var(--regular-gray);
+  background-color: ${(props) => props.theme.projectsBackgroundColor};
 `;
 
 const ContentWrapper = styled.div`
@@ -35,7 +35,7 @@ const Project = styled.div`
   justify-items: center;
   grid-template-rows: auto auto auto 1fr;
   padding: 18px;
-  box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: ${(props) => props.theme.projectBoxShadow};
   max-width: 335px;
   color: var(--dark-blue);
   background-color: var(--light-gray);
@@ -65,7 +65,7 @@ const TechnologiesUsed = styled.div`
 const TechnologyUsed = styled.span`
   border-radius: 14px;
   padding: 6.5px;
-  background-color: var(--dark-blue);
+  background-color: ${(props) => props.theme.technologyUsedBackgroundColor};
   color: white;
 `;
 
@@ -92,8 +92,8 @@ const Projects = () => {
             <Title>Portfolio Site</Title>
             <ImageContainer>
               <StaticImage
-                src="../../images/macbook-pro-landing-page.png"
-                alt="placeholder image"
+                src="../../images/portfolio_site.png"
+                alt="portfolio site"
               />
             </ImageContainer>
             <TechnologiesUsed>
@@ -113,7 +113,7 @@ const Projects = () => {
             </Description>
             <Buttons>
               <ButtonRedirect href="#">Live demo</ButtonRedirect>
-              <ButtonRedirect href="#">Source code</ButtonRedirect>
+              <ButtonRedirect href="https://github.com/tupasj/developer_portfolio">Source code</ButtonRedirect>
             </Buttons>
           </Project>
           <Project>
@@ -121,7 +121,7 @@ const Projects = () => {
             <ImageContainer>
               <StaticImage
                 src="../../images/macbook-pro-landing-page.png"
-                alt="placeholder image"
+                alt="macbook pro landing page"
               />
             </ImageContainer>
             <TechnologiesUsed>

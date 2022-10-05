@@ -52,7 +52,7 @@ table {
 }
 `;
 
-const GlobalCustomStyles = createGlobalStyle`
+const Styles = createGlobalStyle`
 :root {
 	--dark-blue: #141439;
 	--dark-gray: #464646;
@@ -65,7 +65,6 @@ const GlobalCustomStyles = createGlobalStyle`
 html, body {
 	min-height: 100%;
 	font-family: Geneva, Verdana, sans-serif;
-	background-color: var(--light-gray);
 }
 h2 {
 	font-size: 2.1rem;
@@ -77,7 +76,7 @@ h3 {
 }
 a {
 	text-decoration: none;
-	color: white;
+	color: var(--light-gray);
 }
 `;
 
@@ -85,7 +84,7 @@ const GlobalStyles = ({ children }) => {
   return (
     <React.Fragment>
       <CSSReset />
-      <GlobalCustomStyles />
+      <Styles />
       {children}
     </React.Fragment>
   );

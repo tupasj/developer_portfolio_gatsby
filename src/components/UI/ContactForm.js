@@ -4,13 +4,15 @@ import { useForm, ValidationError } from "@formspree/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
-const Container = styled.div``;
+const Container = styled.div`
+  background-color: ${(props) => props.theme.contactFormBackgroundColor};
+`;
 
 const Form = styled.form`
   display: grid;
   gap: 23px;
   padding: 25px;
-  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: ${(props) => props.theme.contactFormBoxShadow};
 `;
 
 // Notification box
@@ -30,15 +32,17 @@ const Honeypot = styled.input`
 const Input = styled.input`
   border: 2px solid var(--light-blue);
   border-radius: 5px;
-  background-color: #fafafa;
+  color: ${(props) => props.theme.mainTextColor};
+  background-color: ${(props) => props.theme.contactFormBackgroundColor};
 `;
 
 const TextArea = styled.textarea`
   height: 250px;
   resize: none;
-  background-color: #fafafa;
   border: 2px solid var(--light-blue);
   border-radius: 5px;
+  color: ${(props) => props.theme.mainTextColor};
+  background-color: ${(props) => props.theme.contactFormBackgroundColor};
 `;
 
 const Send = styled.button`

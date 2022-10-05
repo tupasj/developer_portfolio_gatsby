@@ -23,7 +23,7 @@ const IntroTextTop = styled.div`
   margin-bottom: 22px;
   font-size: 46px;
   font-weight: bold;
-  color: var(--dark-blue);
+  color: ${(props) => props.theme.bannerIntroTextTopColor};
 `;
 
 const IntroTextBottom = styled.div`
@@ -36,7 +36,7 @@ const Banner = () => {
     <Container>
       <AnchorTarget id="banner" offset={-121} />
       <IntroText>
-        <IntroTextTop>Hi, I'm name</IntroTextTop>
+        <IntroTextTop>Hi, I'm Jeremy</IntroTextTop>
         <IntroTextBottom>web developer</IntroTextBottom>
       </IntroText>
       <ImageContainer>
