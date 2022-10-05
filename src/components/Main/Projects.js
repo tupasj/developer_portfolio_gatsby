@@ -37,14 +37,12 @@ const Project = styled.div`
   padding: 18px;
   box-shadow: ${(props) => props.theme.projectBoxShadow};
   max-width: 335px;
-  color: var(--dark-blue);
-  background-color: var(--light-gray);
+  background-color: ${(props) => props.theme.projectBackgroundColor};
 `;
 
 const Title = styled.h3`
   padding-bottom: 12px;
   font-weight: bold;
-  color: var(--dark-blue);
 `;
 
 const ImageContainer = styled.div`
@@ -72,7 +70,6 @@ const TechnologyUsed = styled.span`
 const Description = styled.div`
   margin-bottom: 7px;
   line-height: 1.25;
-  color: var(--dark-blue);
 `;
 
 const Buttons = styled.div`
@@ -113,7 +110,12 @@ const Projects = () => {
             </Description>
             <Buttons>
               <ButtonRedirect href="#">Live demo</ButtonRedirect>
-              <ButtonRedirect href="https://github.com/tupasj/developer_portfolio">Source code</ButtonRedirect>
+              <ButtonRedirect
+                href="https://github.com/tupasj/developer_portfolio"
+                target="_blank"
+              >
+                Source code
+              </ButtonRedirect>
             </Buttons>
           </Project>
           <Project>
