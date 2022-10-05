@@ -89,7 +89,7 @@ const Projects = () => {
             <Title>Portfolio Site</Title>
             <ImageContainer>
               <StaticImage
-                src="../../images/portfolio_site.png"
+                src="https://cdn.jsdelivr.net/gh/tupasj/developer_portfolio/src/images/portfolio-site.png"
                 alt="portfolio site"
               />
             </ImageContainer>
@@ -122,7 +122,7 @@ const Projects = () => {
             <Title>Product Landing Page</Title>
             <ImageContainer>
               <StaticImage
-                src="../../images/macbook-pro-landing-page.png"
+                src="https://cdn.jsdelivr.net/gh/tupasj/developer_portfolio/src/images/macbook-pro-landing-page.png"
                 alt="macbook pro landing page"
               />
             </ImageContainer>
@@ -157,7 +157,7 @@ const Projects = () => {
           <Project>
             <Title>Fake Store</Title>
             <ImageContainer>
-              <StaticImage src="../../images/fake-store.png" alt="fake store" />
+              <StaticImage src="https://cdn.jsdelivr.net/gh/tupasj/developer_portfolio/src/images/fake-store.png" alt="fake store" />
             </ImageContainer>
             <TechnologiesUsed>
               <TechnologyUsed>HTML</TechnologyUsed>
@@ -194,7 +194,7 @@ const Projects = () => {
             <Title>Twitch.tv Clone</Title>
             <ImageContainer>
               <StaticImage
-                src="../../images/twitchtv-clone.png"
+                src="https://cdn.jsdelivr.net/gh/tupasj/developer_portfolio/src/images/twitchtv-clone.png"
                 alt="twitch.tv clone"
               />
             </ImageContainer>

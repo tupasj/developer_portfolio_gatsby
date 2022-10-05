@@ -41,8 +41,8 @@ const Banner = () => {
       </IntroText>
       <ImageContainer>
         <StaticImage
-          src="../../images/web-developer.png"
-          alt="placeholder image"
+          src="https://cdn.jsdelivr.net/gh/tupasj/developer_portfolio/src/images/web-developer.png"
+          alt="web developer coding"
         />
       </ImageContainer>
       <Particles count={29} />
