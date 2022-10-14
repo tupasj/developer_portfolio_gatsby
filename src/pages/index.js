@@ -4,7 +4,6 @@ import { Header } from "../components/Header";
 import { Main } from "../components/Main";
 import { GlobalStyles } from "../GlobalStyles";
 import { Footer } from "../components/Footer";
-import { Script } from "gatsby";
 
 export const Head = () => (
   <>
@@ -14,18 +13,6 @@ export const Head = () => (
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
     ></link>
-    <Script
-      src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GTAG}`}
-      strategy="off-main-thread"
-    />
-    <Script id="gtag-config" strategy="off-main-thread" forward={[`gtag`]}>
-      {`
-    window.dataLayer = window.dataLayer || []
-    window.gtag = function gtag() { window.dataLayer.push(arguments) }
-    gtag('js', new Date())
-    gtag('config', ${process.env.GTAG}, { page_path: location ? location.pathname + location.search + location.hash : undefined })
-  `}
-    </Script>
   </>
 );
 
